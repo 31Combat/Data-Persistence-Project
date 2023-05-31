@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class DataPersistence : MonoBehaviour
 {
-    private static DataPersistence instance;
-    public string test;
+    public static DataPersistence instance;
+    public string playerName;
+    public int score;
 
     private void Awake()
     {
@@ -23,16 +25,10 @@ public class DataPersistence : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void HandleInput(string input)
     {
         // Do something with the input
         Debug.Log("Received input: " + input);
-        test = input;
+        playerName = input;
     }
 }
