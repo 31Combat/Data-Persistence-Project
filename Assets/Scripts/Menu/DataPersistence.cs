@@ -27,8 +27,7 @@ public class DataPersistence : MonoBehaviour
 
     public void HandleInput(string input)
     {
-        // Do something with the input
-        Debug.Log("Received input: " + input);
+        // Save input as a name
         playerName = input;
     }
 }
